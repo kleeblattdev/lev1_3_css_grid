@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: blue;
+    grid-area: header;
+}
+
+aside{
+    background-color: green;
+    grid-area: sidebar;
+}
+
+main{
+    background-color: red;
+    grid-area: main;
+}
+
+footer{
+    background-color: purple;
+    grid-area: footer;
+}
+
+p{
+    color: white;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    gap:10px;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
